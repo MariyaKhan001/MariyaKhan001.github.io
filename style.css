@@ -1,0 +1,239 @@
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #4CAF50;
+  color: #fff;
+}
+
+.navbar .logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#darkModeToggle {
+  background: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+/* Hero Section */
+.hero {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url("assets/HeroSecImage.png") no-repeat center center/cover;
+  position: relative;
+  color: #fff;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: #ffeb3b;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #4CAF50;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #388e3c;
+}
+
+/* About Section */
+.about {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about p {
+  margin-bottom: 15px;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* Profile Snapshot Table */
+.profile-section {
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
+
+.profile-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+.profile-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  font-size: 1rem;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.profile-section th,
+.profile-section td {
+  text-align: left;
+  padding: 15px 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.profile-section th {
+  background: #222;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.profile-section tr:last-child td {
+  border-bottom: none;
+}
+
+.profile-section tr:hover {
+  background: #f1f1f1;
+}
+
+/* Gallery Section */
+#gallery {
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.gallery-container {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.gallery-container img {
+  border-radius: 10px;
+  width: 300px;
+  transition: transform 0.3s;
+}
+
+.gallery-container img:hover {
+  transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Dark Mode */
+body.dark {
+  background: #222;
+  color: #eee;
+}
+
+body.dark .navbar {
+  background: #222;
+}
+
+body.dark .btn {
+  background: #333;
+  color: #fff;
+}
+
+body.dark .hero-overlay {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .hero {
+    padding: 20px;
+  }
+  .profile-section table {
+    width: 100%;
+  }
+  .about {
+    padding: 40px 15px;
+  }
+}
