@@ -50,14 +50,19 @@ body {
 
 /* Hero Section */
 .hero {
-  height: 90vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 80vh;
+  background: linear-gradient(
+      rgba(100, 100, 200, 0.7), 
+      rgba(0, 0, 0, 0)
+    ), 
+    url("assets/HeroSecImage.png") no-repeat center center;
+  background-size: cover;
+  color: white;
   text-align: center;
-  background: url("assets/HeroSecImage.png") no-repeat center center/cover;
-  position: relative;
-  color: #fff;
 }
 
 .hero-overlay {
